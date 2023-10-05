@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>top - Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <style>
+      .button-container,
+      .points-container {
+        width: 400px;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .result-text {
+        text-align: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="button-container">
+      <button id="rockBtn">Rock</button>
+      <button id="paperBtn">Paper</button>
+      <button id="scissorsBtn">Scissors</button>
+    </div>
+    <div class="points-container">
+      Player: <span id="pointsPlayerDisplay">0</span> Computer:
+      <span id="pointsComputerDisplay">0</span>
+    </div>
+
+    <div class="result-text">Have fun!</div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
